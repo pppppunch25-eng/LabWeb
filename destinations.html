@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TravelBite — สถานที่แนะนำ</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="badge"></span><span>TravelBite</span></a>
+      <nav class="navlinks" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="destinations.html">สถานที่แนะนำ</a>
+        <a href="place.html">รายละเอียดสถานที่</a>
+        <a href="food.html">ของกินเด็ด</a>
+        <a href="gallery.html">แกลเลอรี</a>
+        <a href="about.html">ผู้จัดทำ</a>
+      </nav>
+      <div class="cta">
+        <a class="btn primary" href="food.html">ดูเมนูยอดนิยม</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="sectionHead reveal" id="quickHint">
+        <div>
+          <h2 class="h2">สถานที่แนะนำ</h2>
+          <p class="sub">ค้นหาจากคำ หรือเลือกหมวด แล้วคลิกเข้าไปดูรายละเอียด + ของกินประจำสถานที่</p>
+        </div>
+      </div>
+
+      <div class="searchBar reveal">
+        <input id="q" class="input" placeholder="ลองพิมพ์: ตลาด, คาเฟ่, ธรรมชาติ, ถ่ายรูป">
+        <select id="type" class="input" aria-label="หมวดหมู่">
+          <option value="all">ทุกหมวด</option>
+          <option value="market">ตลาด / สตรีทฟู้ด</option>
+          <option value="cafe">คาเฟ่</option>
+          <option value="nature">ธรรมชาติ</option>
+          <option value="photo">จุดถ่ายรูป</option>
+        </select>
+        <a class="btn primary" href="place.html#night-market">ดูตัวอย่างสถานที่</a>
+      </div>
+
+      <div style="height:14px"></div>
+
+      <div class="grid cards3">
+        <article class="card placeCard tilt reveal placeItem" data-name="ตลาดนัดกลางคืน" data-type="market">
+          <div class="placeImg" style="background-image:url('https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?auto=format&fit=crop&w=1600&q=80');"></div>
+          <div class="placeBody">
+            <div class="metaRow">
+              <div class="meta"><span class="dot"></span><span>ตลาด / สตรีทฟู้ด</span></div>
+              <div class="score">⭐ 4.8</div>
+            </div>
+            <div class="placeName">ตลาดนัดกลางคืน</div>
+            <p class="placeDesc">แสงไฟสวย เดินง่าย ของกินหลากหลาย เหมาะกับเพื่อน/คู่รัก</p>
+            <div class="actions">
+              <a class="btn primary" href="place.html#night-market">รายละเอียด</a>
+              <a class="btn" href="food.html#street-food">ของกิน</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card placeCard tilt reveal placeItem" data-name="ตลาดเช้าท้องถิ่น" data-type="market">
+          <div class="placeImg" style="background-image:url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1600&q=80');"></div>
+          <div class="placeBody">
+            <div class="metaRow">
+              <div class="meta"><span class="dot"></span><span>ตลาด / ของกินเช้า</span></div>
+              <div class="score">⭐ 4.6</div>
+            </div>
+            <div class="placeName">ตลาดเช้าท้องถิ่น</div>
+            <p class="placeDesc">อาหารพื้นบ้าน ราคาดี ได้บรรยากาศวิถีชีวิต</p>
+            <div class="actions">
+              <a class="btn primary" href="place.html#morning-market">รายละเอียด</a>
+              <a class="btn" href="food.html#breakfast">ของกิน</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card placeCard tilt reveal placeItem" data-name="คาเฟ่วิวธรรมชาติ" data-type="cafe">
+          <div class="placeImg" style="background-image:url('https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1600&q=80');"></div>
+          <div class="placeBody">
+            <div class="metaRow">
+              <div class="meta"><span class="dot"></span><span>คาเฟ่</span></div>
+              <div class="score">⭐ 4.7</div>
+            </div>
+            <div class="placeName">คาเฟ่วิวธรรมชาติ</div>
+            <p class="placeDesc">มุมถ่ายรูปเยอะ มีเมนูซิกเนเจอร์ ชิลทั้งวัน</p>
+            <div class="actions">
+              <a class="btn primary" href="place.html#nature-cafe">รายละเอียด</a>
+              <a class="btn" href="food.html#cafe-menu">ของกิน</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card placeCard tilt reveal placeItem" data-name="คาเฟ่มินิมอลในเมือง" data-type="cafe">
+          <div class="placeImg" style="background-image:url('https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1600&q=80');"></div>
+          <div class="placeBody">
+            <div class="metaRow">
+              <div class="meta"><span class="dot"></span><span>คาเฟ่</span></div>
+              <div class="score">⭐ 4.5</div>
+            </div>
+            <div class="placeName">คาเฟ่มินิมอลในเมือง</div>
+            <p class="placeDesc">เดินทางง่าย เหมาะกับอ่านหนังสือ/ทำงาน พร้อมเบเกอรี</p>
+            <div class="actions">
+              <a class="btn primary" href="place.html#city-cafe">รายละเอียด</a>
+              <a class="btn" href="food.html#dessert">ของกิน</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card placeCard tilt reveal placeItem" data-name="ทางเดินป่าและน้ำตก" data-type="nature">
+          <div class="placeImg" style="background-image:url('https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1600&q=80');"></div>
+          <div class="placeBody">
+            <div class="metaRow">
+              <div class="meta"><span class="dot"></span><span>ธรรมชาติ</span></div>
+              <div class="score">⭐ 4.9</div>
+            </div>
+            <div class="placeName">ทางเดินป่าและน้ำตก</div>
+            <p class="placeDesc">อากาศดี เหมาะกับคนชอบเดินเล่น เบา ๆ แบบครึ่งวัน</p>
+            <div class="actions">
+              <a class="btn primary" href="place.html#waterfall">รายละเอียด</a>
+              <a class="btn" href="food.html#light-snacks">ของกิน</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card placeCard tilt reveal placeItem" data-name="จุดชมวิวพระอาทิตย์" data-type="photo">
+          <div class="placeImg" style="background-image:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80');"></div>
+          <div class="placeBody">
+            <div class="metaRow">
+              <div class="meta"><span class="dot"></span><span>จุดถ่ายรูป</span></div>
+              <div class="score">⭐ 4.9</div>
+            </div>
+            <div class="placeName">จุดชมวิวพระอาทิตย์</div>
+            <p class="placeDesc">แสงสวยมากช่วงเย็น เหมาะกับสายถ่ายรูปและเดท</p>
+            <div class="actions">
+              <a class="btn primary" href="place.html#sunset-view">รายละเอียด</a>
+              <a class="btn" href="food.html#light-snacks">ของกิน</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container fgrid">
+      <div>
+        <div class="row" style="gap:10px"><span class="badge"></span><b>TravelBite</b></div>
+        <p class="smallNote">ใช้ช่องค้นหาเพื่อให้เว็บช่วยเลือกสถานที่ + ของกินให้เหมาะกับสไตล์ที่ต้องการ</p>
+      </div>
+      <div>
+        <b>ลิงก์</b>
+        <div class="row" style="margin-top:10px">
+          <a class="btn" href="index.html">หน้าแรก</a>
+          <a class="btn" href="food.html">ของกินเด็ด</a>
+          <a class="btn" href="about.html">เครดิตรูปภาพ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+</body>
+</html>
